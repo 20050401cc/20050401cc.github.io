@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WOOKING · AI Builder</title>
+  <meta name="description" content="WOOKING 的个人 AI 工程站 — 桌面代理、多模态模型、自动化工具" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ─── Canvas Background ─── -->
+  <canvas id="grid-canvas"></canvas>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">W<span class="accent">.</span></a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/20050401cc" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <header class="hero" id="hero">
+    <div class="hero-badge reveal">
+      <span class="pulse-dot"></span>
+      <span>AI Builder & Toolmaker</span>
+    </div>
+    <h1 class="hero-title reveal">
+      <span class="line">I build tools</span>
+      <span class="line">that make AI</span>
+      <span class="line accent-gradient">actually useful.</span>
+    </h1>
+    <p class="hero-sub reveal">
+      桌面代理 · 多模态视觉 · 自动化流水线 · Windows 工具链<br/>
+      让 AI 从聊天框走进真实工作流。
+    </p>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="17">0</span>
+        <span class="stat-label">Repositories</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="5">0</span>
+        <span class="stat-label">AI Tools</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Languages</span>
+      </div>
+    </div>
+    <a href="#projects" class="hero-cta reveal">
+      Explore Projects
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <!-- ─── Projects ─── -->
+  <main>
+    <section class="projects" id="projects">
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2>Things I've Built</h2>
+      </div>
+
+      <!-- AI Core -->
+      <div class="project-group reveal">
+        <h3 class="group-title">
+          <span class="group-icon">🧠</span>
+          AI 核心工具
+        </h3>
+        <div class="bento-grid">
+          <a href="https://github.com/20050401cc/ClaudeDesktopGateway" target="_blank" rel="noopener" class="card card-wide reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Claude Desktop Gateway</h4>
+            <p>本地代理网关，让 Claude Desktop 通过 MiMo API 运行。桥接不同 AI 后端的统一入口。</p>
+            <div class="card-tags">
+              <span>代理网关</span><span>MiMo API</span><span>Claude Desktop</span>
+            </div>
+          </a>
+          <a href="https://github.com/20050401cc/mimo-token-lab" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>MiMo Token Lab</h4>
+            <p>大规模 Token 消耗实验平台 — Agent 工作流 + 合成数据 + 代码审计。</p>
+            <div class="card-tags">
+              <span>Agent</span><span>Token</span><span>合成数据</span>
+            </div>
+          </a>
+          <a href="https://github.com/20050401cc/MiMo-API-Compat-Fix" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>MiMo API Compat Fix</h4>
+            <p>小米 MiMo 模型在各类 AI 编程工具中的兼容性修复方案。</p>
+            <div class="card-tags">
+              <span>API 兼容</span><span>MiMo</span><span>修复工具</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Automation -->
+      <div class="project-group reveal">
+        <h3 class="group-title">
+          <span class="group-icon">⚡</span>
+          自动化 & 桌面工具
+        </h3>
+        <div class="bento-grid">
+          <a href="https://github.com/20050401cc/arknights-assistant" target="_blank" rel="noopener" class="card card-wide reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Arknights Assistant</h4>
+            <p>明日方舟全自动助手 — 基于 MuMu 模拟器 ADB 控制，支持自动战斗、基建管理、公招分析。</p>
+            <div class="card-tags">
+              <span>ADB</span><span>游戏自动化</span><span>图像识别</span>
+            </div>
+          </a>
+          <a href="https://github.com/20050401cc/computer-use-lite" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Computer Use Lite</h4>
+            <p>轻量级电脑操控方案，让 AI 直接操作桌面应用。</p>
+            <div class="card-tags">
+              <span>桌面操控</span><span>AI Agent</span>
+            </div>
+          </a>
+          <a href="https://github.com/20050401cc/windows-ops-toolkit" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Windows Ops Toolkit</h4>
+            <p>Windows 诊断、清理、DOCX 处理和本地 Agent 修复工具集。</p>
+            <div class="card-tags">
+              <span>系统运维</span><span>清理工具</span><span>Agent 修复</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Web & Frontend -->
+      <div class="project-group reveal">
+        <h3 class="group-title">
+          <span class="group-icon">🎨</span>
+          前端 & Web
+        </h3>
+        <div class="bento-grid">
+          <a href="https://github.com/20050401cc/toonhub" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang ts">TypeScript</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>ToonHub</h4>
+            <p>React + Vite + Tailwind 构建的漫画前端应用，支持浏览和阅读。</p>
+            <div class="card-tags">
+              <span>React</span><span>Vite</span><span>Tailwind</span>
+            </div>
+          </a>
+          <a href="https://github.com/20050401cc/tiny-web-lab" target="_blank" rel="noopener" class="card reveal">
+            <div class="card-top">
+              <span class="card-lang html">HTML</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Tiny Web Lab</h4>
+            <p>静态网页实验场 — 晚餐轮盘、CSS 宠物、WebGL 体素沙盒。</p>
+            <div class="card-tags">
+              <span>WebGL</span><span>CSS 动画</span><span>实验</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tools & Templates -->
+      <div class="project-group reveal">
+        <h3 class="group-title">
+          <span class="group-icon">🛠️</span>
+          工具链 & 模板
+        </h3>
+        <div class="bento-grid grid-3">
+          <a href="https://github.com/20050401cc/kiro-hermes-acp-launcher" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang ps">Shell</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Hermes ACP Launcher</h4>
+            <p>Windows 启动器，通过 Kiro CLI ACP 运行 Hermes Agent。</p>
+          </a>
+          <a href="https://github.com/20050401cc/codex-sidebar-fix" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Codex Sidebar Fix</h4>
+            <p>OpenAI Codex 桌面端侧边栏历史标题修复补丁。</p>
+          </a>
+          <a href="https://github.com/20050401cc/antigravity-zh-patch" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Antigravity 中文补丁</h4>
+            <p>Google Antigravity 2.0 桌面端 Windows 运行时中文化。</p>
+          </a>
+          <a href="https://github.com/20050401cc/image-prompt-archive-template" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Prompt Archive</h4>
+            <p>归档图像生成 Prompt 并导出为 Markdown。</p>
+          </a>
+          <a href="https://github.com/20050401cc/teacher-release-packager" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Release Packager</h4>
+            <p>打包整洁的 zip 交付包，用于课程作业和教学提交。</p>
+          </a>
+          <a href="https://github.com/20050401cc/windows-release-sanitizer" target="_blank" rel="noopener" class="card card-sm reveal">
+            <div class="card-top">
+              <span class="card-lang python">Python</span>
+              <span class="card-arrow">↗</span>
+            </div>
+            <h4>Release Sanitizer</h4>
+            <p>从本地项目生成干净的公开发布包，清除敏感信息。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About ─── -->
+    <section class="about" id="about">
+      <div class="section-header reveal">
+        <span class="section-tag">About</span>
+        <h2>How I Work</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-card">
+          <div class="about-icon">🤖</div>
+          <h4>AI-Native Development</h4>
+          <p>从 Claude Desktop 代理网关到 MiMo 多模态视觉，我构建让 AI 真正融入工作流的工具，而不只是聊天。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">⚙️</div>
+          <h4>Automation First</h4>
+          <p>游戏自动化、系统清理、构建流水线 — 凡是能自动化的，绝不手动。ADB 控制、图像识别、Agent 编排是我的日常。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🧩</div>
+          <h4>Full-Stack Tooling</h4>
+          <p>Python 后端 + React 前端 + Windows 系统级工具。跨层级解决问题，从 API 兼容性到桌面端 UI 补丁。</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">📐</div>
+          <h4>Ship & Iterate</h4>
+          <p>每个项目都是解决真实痛点的产物。先跑起来，再打磨。模板化可复用的部分，让下一个项目更快。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">WOOKING<span class="accent">.</span></span>
+        <span class="footer-copy">© 2026 · Built with vanilla HTML/CSS/JS</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/20050401cc" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
